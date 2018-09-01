@@ -57,11 +57,14 @@ void print_help(){
 }
 
 int main(int argc, char** argv){
+    if(argv[1] == "-h"){
+        print_help();
+    }
     const std::string wave_type = argv[1];
     const int wave_frequency = atoi(argv[2]);
     const int wave_playtime = atoi(argv[3]);
     const std::string filename = argv[4];
-    if(argc < 4){
+    if(argc != 4){
         print_help();
         return 1;
     } else {
