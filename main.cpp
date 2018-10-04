@@ -26,7 +26,7 @@ void write_wave(std::vector<float> &wave, const std::string filename){
     // write buffer to file
     std::ofstream file;
     file.open(filename);
-    file << buffer;
+    file << buffer.str();
     file.close();
 }
 
