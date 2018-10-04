@@ -34,7 +34,7 @@ void generate_sine(const int &frequency, const int &playtime, const std::string 
     int block_size = playtime * NUM_SAMPLES;
     // this vector will hold the sample data
     std::vector<float> wave(block_size);
-    // this loop calculates all the wave samples until 
+    // this loop calculates all the wave samples until
     // the end of the defined playtime
     for(int i = 0; i < NUM_SAMPLES * playtime; i++){
         wave[i] = sin(2 * M_PI * frequency * i/SAMPLING_RATE);
@@ -47,7 +47,7 @@ void generate_saw(const int &frequency, const int &playtime, const std::string &
     int block_size = playtime * NUM_SAMPLES;
     // this vector will hold the sample data
     std::vector<float> wave(block_size);
-    // this loop calculates all the wave samples until 
+    // this loop calculates all the wave samples until
     // the end of the defined playtime
     float x = 0;
     for(int i = 0; i < NUM_SAMPLES * playtime; i++){
